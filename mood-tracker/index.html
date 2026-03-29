@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mood Tracker</title>
+</head>
+<body>
+  <h1>How do you feel today? 🌸</h1>
+
+  <button onclick="setMood('happy')">😊</button>
+  <button onclick="setMood('tired')">😴</button>
+  <button onclick="setMood('angry')">😡</button>
+
+  <p id="result"></p>
+
+  <script>
+    function setMood(mood) {
+      let message = "";
+
+      if (mood === "happy") {
+        message = "🌸 Courage, tu fais du bon boulot. Sois fière de toi hihi💖";
+      } 
+      else if (mood === "tired") {
+        message = "😴 Repose-toi, c’est important. Tu fais déjà de ton mieux 💭^.^";
+      } 
+      else if (mood === "angry") {
+        message = "✨ Les épreuves de la vie passent, reste forte. Tout finit par s’apaiser 🌙its okey to not be okey sometimes";
+      }
